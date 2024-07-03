@@ -8,25 +8,29 @@
 </head>
 <body>
   <header>
-    <h1 data-testid="slackDisplayName">Your Slack Display Name</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#goals">Tech Goals</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <h1 data-testid="slackDisplayName" class="styled-name">Confidence Chukwudi</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#goals">Tech Goals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
   </header>
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <img src="your-slack-profile-picture.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture">
-      <p data-testid="slackEmail">your-email@example.com</p>
+      <img src="images/your-slack-profile-picture.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture">
+      <p data-testid="slackEmail">chukwudiconfidenceosinachi.com</p>
       <div class="datetime">
         <p data-testid="currentTimeUTC">Loading UTC Time...</p>
         <p data-testid="currentDay">Loading Day...</p>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula, nisi nec pellentesque dictum, arcu odio sollicitudin felis, sit amet dignissim sem libero at lectus. Integer gravida, ex a laoreet tincidunt, elit purus malesuada quam, a lacinia ligula est vel quam. Mauris et nunc id leo aliquet fermentum. Nulla facilisi.</p>
     </section>
     <section id="goals">
       <h2>My Tech Goals for the Next 2 Years</h2>
@@ -37,7 +41,6 @@
         <li>Improve my problem-solving skills.</li>
         <li>Gain proficiency in cloud computing.</li>
       </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula, nisi nec pellentesque dictum, arcu odio sollicitudin felis, sit amet dignissim sem libero at lectus. Integer gravida, ex a laoreet tincidunt, elit purus malesuada quam, a lacinia ligula est vel quam. Mauris et nunc id leo aliquet fermentum. Nulla facilisi.</p>
     </section>
     <section id="contact">
       <h2>Contact Me</h2>
@@ -55,12 +58,14 @@
         <textarea id="message" name="message"></textarea>
         <button type="submit">Send</button>
       </form>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula, nisi nec pellentesque dictum, arcu odio sollicitudin felis, sit amet dignissim sem libero at lectus. Integer gravida, ex a laoreet tincidunt, elit purus malesuada quam, a lacinia ligula est vel quam. Mauris et nunc id leo aliquet fermentum. Nulla facilisi.</p>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <p>&copy; 2024 Confidence Chukwudi. All rights reserved.</p>
   </footer>
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    &#8679;
+  </a>
   <script src="script.js"></script>
 </body>
 </html>
